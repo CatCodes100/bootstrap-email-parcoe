@@ -14,66 +14,135 @@
           <a class="navbar-brand" href="#">
             <img src="https://images.pexels.com/photos/70069/pexels-photo-70069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
             Good Morning</a>
+           <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#FormControlTextarea1" aria-expanded="false" aria-controls="collapseFormControlTextarea1"><svg xmlns="http://www.w3.org/2000/svg" width="3em" height="2em" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+              </svg>
+                Button with data-target
+              </button>-->
+            <button type="button" class="btn btn-outline-success-subtle"><svg xmlns="http://www.w3.org/2000/svg" width="3em" height="2em" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+              </svg></button>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-primary" type="submit">Search</button>
           </form> </div></nav>
-    <!--yellow opened email-->
+
+
+  <!--primary container for everything-->
+    <div class="container-fluid">
+        <div class="row">
+
+     <!--pink folders-->
+<div class="col-12 col-md-3 bg-danger-subtle folders order-1 order-md-0">folders 
+        <ul>
+            <li>
+                <a href="#">Inbox</a>
+                </li>
+            <li>
+                <a href="#">Starred</a>
+                </li>
+            <li>
+                <a href="#">Sent</a>
+                </li>
+            <li>
+                <a href="#">Spam</a>
+                </li>
+            <li>
+                <a href="#">Trash</a>
+                </li>
+        </ul>
+       
+    </div>
+    
+
+          <!--container D wrapping around B & C-->
+<div class="col-12 col-md-9 container-fluid">
+    <div class="row">
+
+    <!--yellow opened email B-->
     <div class="container-fluid opened-email">
         <div class="row">
-            <div class="col-12 col-xl-7 bg-warning-subtle">opened email
+            <div class="col-12 col-xl-7 bg-warning-subtle order-0 order-xl-1">opened email
                 <p><span>Dear Supporters:</span>
                 Together we can reverse the extinction projectory! All donations received by tonight at midnight will be matched!</p>
-                <img src="https://images.pexels.com/photos/3150271/pexels-photo-3150271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                width="50% center" height="auto" alt="endangered turtle">
+                <!--<img src="https://images.pexels.com/photos/3150271/pexels-photo-3150271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                width="50% center" height="auto" alt="endangered turtle">-->
          
-                    
-                    <button class="btn btn-danger" type="submit">Donate</button>
-                  </form>
+                <a class="btn btn-danger" href="https://reviverestore.org/" role="button">Donate</a>
+                   
+                    <div class="form-group">
+                      <label for="FormControlTextarea1">Questions? Suggestions?</label>
+                      <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </form> 
+                  <button class="btn btn-success" type="submit" href="https://reviverestore.org/" role="button">Reply</button>
             </div>
             
         
-    <!--orange email overview-->
+    <!--orange email overview C-->
     <div class="col-12 col-xl-5 bg-warning email-overview">email overview
-    <ul>
-                <li>
-                    Revive & Restore
+    
+     
+            <ul class="list-group mb-3">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched" checked>
+                  <label class="form-check-label stretched-link" for="firstCheckboxStretched">Revive & Restore</label>
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                  <label class="form-check-label stretched-link" for="secondCheckboxStretched">PetSmart</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                  <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Mom</label>
+                
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg> 
+                </li>
+              </ul>
+          </ul>
+<!---
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Revive & Restore</li>
+            <li class="list-group-item">PetSmart</li>
+            <li class="list-group-item">Mom</li>
+            
+          </ul>
+               <li>
+                    <strong>Revive & Restore</strong>
                     <img href="https://icons8.com/icon/qdQpy48X3Rjv/star"></img>
                     </li>
                 <li>
-                    PetSmart
+                    <strong>PetSmart</strong>
                     </li>
                 <li>
-                    Mom
-                    </li>
+                    <strong>Mom</strong>
+                    </li>-->
             </ul>
         </div>
-   <!--pink folders-->
-    <div class="col-12 col-md-3 bg-danger-subtle folders">folders 
-        <div class="container">
-            <div class="row">
-            <div class="col-12 col-md-9">
-            <ul>
-                <li>
-                    <a href="#">Inbox</a>
-                    </li>
-                <li>
-                    <a href="#">Starred</a>
-                    </li>
-                <li>
-                    <a href="#">Sent</a>
-                    </li>
-                <li>
-                    <a href="#">Spam</a>
-                    </li>
-                <li>
-                    <a href="#">Trash</a>
-                    </li>
-            </ul>
         </div>
-        
     </div>
 
+
+        
+
+        <!--text area email-->
+               <!--not working<div co
+                <div class="input-group">
+                    <span class="input-group-text">Hey Mom!</span>
+                    <textarea class="form-control" aria-label="Hey Mom!"></textarea>
+                  </div> -->
+            </div>
+
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
